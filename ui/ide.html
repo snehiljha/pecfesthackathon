@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Codeboard Online IDE</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- <div class="header"> Codeboard Online IDE </div>
+    <div class="control-panel">
+        Select Language:
+        &nbsp; &nbsp;
+        <select id="languages" class="languages" onchange="changeLanguage()">
+            <option value="c"> C </option>
+            <option value="cpp"> C++ </option>
+            <option value="php"> PHP </option>
+            <option value="python"> Python </option>
+            <option value="node"> Node JS </option>
+        </select>
+    </div>
+    <div class="editor" id="editor"></div>
+
+    <div class="button-container">
+        <button class="btn" onclick="executeCode()"> Run </button>
+    </div>
+
+    <div class="output"></div> -->
+
+    <div>
+
+        <div class="header" style="background: #00A9FF;text-align: left;font-size: 20px;font-weight: bold;color: white;padding: 20px;
+        font-family: sans-serif;"> Online Coding IDE </div>
+        <div class="control-panel" style="background: lightgray;text-align: right;padding: 4px;font-family: sans-serif;">
+            Select Language:
+            &nbsp; &nbsp;
+            <select id="languages" class="languages" style="    background: white;
+            border: 1px solid gray;" onchange="changeLanguage()">
+                <option value="cpp"> C++ </option>
+                <option value="py"> Python </option>
+            </select>
+        </div>
+
+        <div class="editor" id="editor" style="height: 400px;"></div>
+
+        <div class="button-container" style="text-align: right;padding: 4px;">
+            <button class="btn" style="width: 5%; border-radius: 20px;background: #2ecc71;color: #ffffff;" onclick="executeCode()"> Run </button>
+        </div>
+
+        <div class="output" style="padding: 4px;border: 2px solid gray;min-height: 120px;width: 99%;resize: none;">
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/lib/ace.js"></script>
+    <script src="js/lib/theme-monokai.js"></script>
+    <script src="js/ide.js"></script>
+
+</body>
+</html>

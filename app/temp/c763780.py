@@ -1,0 +1,1 @@
+print("Ashya is love")
