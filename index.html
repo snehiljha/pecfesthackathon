@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Bootstrap CDN for CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- OWL-Carousal CDN  -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-- Style Sheet included  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Style for banner image  -->
+    <style>
+        .banner-image {
+            background-image: url('banner-img.jpg');
+            background-size: cover;
+        }
+
+    </style>
+
+
+
+    <title>Online Coding</title>
+
+    <script>
+		window.onload=function(){
+			document.getElementById('loader').style.display="none";
+			document.getElementById('statcon-content').style.display="block";
+		};
+		</script>
+		<style>
+		#statcon-content{display:none;}
+		#statcon-content img{width:100%;}
+		#loader{
+			position: absolute;
+			margin: auto;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 400px;
+			height: 400px;
+		}
+		#loader img{width:400px;}
+		</style>
+</head>
+
+<body>
+    <div id="loader">
+        <img src="https://hackernoon.com/images/0*4Gzjgh9Y7Gu8KEtZ.gif"/>
+    </div>
+
+    <div id="statcon-content">
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="height: 10%;">
+        <div class="container">
+            <a class="navbar-brand" style="font-weight: bolder;"><h3>Online Coding</h3></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white nav-link-ltr" href="index.html"><h5>Home</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white nav-link-ltr" href="coding.html"><h5>CODING</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white nav-link-ltr" href="puzzle.html"><h5>PUZZLES</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white nav-link-ltr" href="leaderboard.html"><h5>LEADERBOARD</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white nav-link-ltr" href="contact.html"><h5>Contact Us</h5></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Image  -->
+    <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="content text-center">
+            <h1 class="text-white" style="font-weight: bolder;">WELCOME to ONLINE CODING!!!</h1>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+    <!-- Bootstrap CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- OWL-Carousal CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- js file  -->
+    <script src="index.js" charset="utf-8"></script>
+    <!-- js for owl-carousal  -->
+    <script>
+        $(document).ready(function () {
+            var silder = $(".owl-carousel");
+            silder.owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: false,
+                items: 1,
+                stagePadding: 20,
+                center: true,
+                nav: false,
+                margin: 50,
+                dots: true,
+                loop: true,
+                responsive: {
+                    0: { items: 1 },
+                    480: { items: 2 },
+                    575: { items: 2 },
+                    768: { items: 2 },
+                    991: { items: 3 },
+                    1200: { items: 4 }
+                }
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
